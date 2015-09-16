@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+              http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+         version="2.5"
+         xmlns="http://java.sun.com/xml/ns/javaee">
+
+	<!-- Default page to serve -->
+	<welcome-file-list>
+		<welcome-file>WebBareBones.html</welcome-file>
+	</welcome-file-list>
+
+	<!-- Servlets -->
+	<servlet>
+		<servlet-name>loginService</servlet-name>
+		<servlet-class>org.bogbog.server.LoginServiceImpl</servlet-class>
+	</servlet>
+  
+	<servlet>
+		<servlet-name>characterService</servlet-name>
+		<servlet-class>org.bogbog.server.CharacterServiceImpl</servlet-class>
+	</servlet>
+  
+	<servlet>
+		<servlet-name>abilityService</servlet-name>
+		<servlet-class>org.bogbog.server.AbilityServiceImpl</servlet-class>
+	</servlet>
+  
+	<servlet>
+		<servlet-name>raceService</servlet-name>
+		<servlet-class>org.bogbog.server.RaceServiceImpl</servlet-class>
+	</servlet>
+  
+	<servlet>
+		<servlet-name>skillService</servlet-name>
+		<servlet-class>org.bogbog.server.SkillServiceImpl</servlet-class>
+	</servlet>
+
+	<!-- Servlet Mappings -->
+	<servlet-mapping>
+		<servlet-name>loginService</servlet-name>
+		<url-pattern>/webbarebones/login</url-pattern>
+	</servlet-mapping>
+  
+	<servlet-mapping>
+		<servlet-name>characterService</servlet-name>
+		<url-pattern>/webbarebones/character</url-pattern>
+	</servlet-mapping>
+  
+	<servlet-mapping>
+		<servlet-name>abilityService</servlet-name>
+		<url-pattern>/webbarebones/ability</url-pattern>
+	</servlet-mapping>
+  
+	<servlet-mapping>
+		<servlet-name>raceService</servlet-name>
+		<url-pattern>/webbarebones/race</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>skillService</servlet-name>
+		<url-pattern>/webbarebones/skill</url-pattern>
+	</servlet-mapping>
+
+</web-app>

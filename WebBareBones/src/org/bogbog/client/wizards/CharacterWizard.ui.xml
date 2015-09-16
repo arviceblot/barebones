@@ -1,0 +1,142 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<ui:style>
+	</ui:style>
+
+	<g:ScrollPanel>
+		<g:VerticalPanel width="100%" height="100%">
+			<g:Label text="Ability Scores" horizontalAlignment="ALIGN_LEFT"/>
+			<g:Grid>
+				<g:row>
+					<g:customCell>
+						<g:Label text="STR"/>
+					</g:customCell>
+					<g:customCell>
+						<g:ListBox/>
+					</g:customCell>
+					<g:customCell>
+						<g:Label/>
+					</g:customCell>
+					<g:customCell>
+						<g:IntegerBox visibleLength="3" ui:field="randStrValue"/>
+					</g:customCell>
+				</g:row>
+				<g:row>
+					<g:customCell>
+						<g:Label text="DEX"/>
+					</g:customCell>
+					<g:customCell>
+						<g:ListBox/>
+					</g:customCell>
+					<g:customCell>
+						<g:Label text="or" horizontalAlignment="ALIGN_LEFT"/>
+					</g:customCell>
+					<g:customCell>
+						<g:IntegerBox visibleLength="3" ui:field="randDexValue"/>
+					</g:customCell>
+				</g:row>
+				<g:row>
+					<g:customCell>
+						<g:Label text="LOG"/>
+					</g:customCell>
+					<g:customCell>
+						<g:ListBox/>
+					</g:customCell>
+					<g:customCell>
+						<g:Button text="randomize" ui:field="randAbilityButton">randomize</g:Button>
+					</g:customCell>
+					<g:customCell>
+						<g:IntegerBox visibleLength="3" ui:field="randLogValue"/>
+					</g:customCell>
+				</g:row>
+				<g:row>
+					<g:customCell>
+						<g:Label text="WIL"/>
+					</g:customCell>
+					<g:customCell>
+						<g:ListBox/>
+					</g:customCell>
+					<g:customCell>
+						<g:Button ui:field="clearAbilityButton">clear</g:Button>
+					</g:customCell>
+					<g:customCell>
+						<g:IntegerBox visibleLength="3" ui:field="randWilValue"/>
+					</g:customCell>
+				</g:row>
+			</g:Grid>
+			<g:Label text="Race"/>
+			<g:ListBox ui:field="raceListBox"/>
+			<g:Label text="Skills"/>
+			<g:Grid>
+				<g:row>
+					<g:customCell>
+						<g:Label text="Primary"/>
+					</g:customCell>
+					<g:customCell>
+						<g:ListBox ui:field="primarySkillComboBox"/>
+					</g:customCell>
+				</g:row>
+				<g:row>
+					<g:customCell>
+						<g:Label text="Secondary"/>
+					</g:customCell>
+					<g:customCell>
+						<g:ListBox ui:field="secondarySkillComboBox"/>
+					</g:customCell>
+				</g:row>
+				<g:row>
+					<g:customCell>
+						<g:Label text="Level 1"/>
+					</g:customCell>
+					<g:customCell>
+						<g:ListBox ui:field="levedSkillComboBox"/>
+					</g:customCell>
+				</g:row>
+			</g:Grid>
+			<g:Label text="Descriptors"/>
+			<g:Grid>
+				<g:row>
+					<g:customCell>
+						<g:Label text="Name" />
+					</g:customCell>
+					<g:customCell>
+						<g:TextBox ui:field="nameValue"/>
+					</g:customCell>
+				</g:row>
+				<g:row>
+					<g:customCell>
+						<g:Label text="Gender" />
+					</g:customCell>
+					<g:customCell>
+						<g:TextBox ui:field="genderValue"/>
+					</g:customCell>
+				</g:row>
+				<g:row>
+					<g:customCell>
+						<g:Label text="Eyes" />
+					</g:customCell>
+					<g:customCell>
+						<g:TextBox ui:field="eyesValue"/>
+					</g:customCell>
+				</g:row>
+				<g:row>
+					<g:customCell>
+						<g:Label text="Hair" />
+					</g:customCell>
+					<g:customCell>
+						<g:TextBox ui:field="hairValue"/>
+					</g:customCell>
+				</g:row>
+				<g:row>
+					<g:customCell>
+						<g:Label text="Descriptors" />
+					</g:customCell>
+					<g:customCell>
+						<g:TextBox ui:field="descriptorsValue"/>
+					</g:customCell>
+				</g:row>
+			</g:Grid>
+		</g:VerticalPanel>
+	</g:ScrollPanel>
+</ui:UiBinder> 
